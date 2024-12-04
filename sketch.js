@@ -1,3 +1,10 @@
+let input;
+const taskList5 = [];
+const taskList4 = [];
+const taskList3 = [];
+const taskList2 = [];
+const taskList1 = [];
+
 function setup() {
   createCanvas(500, 500);
   background(255);
@@ -35,6 +42,34 @@ function draw() {
   text('3- Important', 5, 80);
   text('2- Slightly Important', 5, 95);
   text('1- Less Important', 5, 110);
+}
+
+function keyPressed() {
+  if (key === '5') {
+    let msg = input.value;
+    taskList5.push(msg);
+    console.log(taskList5)
+  }
+  if (key === '4') {
+    let msg = input.value;
+    taskList4.push(msg);
+    console.log(taskList4)
+  }
+  if (key === '3') {
+    let msg = input.value;
+    taskList3.push(msg);
+    console.log(taskList3)
+  }
+  if (key === '2') {
+    let msg = input.value;
+    taskList2.push(msg);
+    console.log(taskList2)
+  }
+  if (key === '1') {
+    let msg = input.value;
+    taskList1.push(msg);
+    console.log(taskList1)
+  }
 }
 
 function mouseClicked() {
