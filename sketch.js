@@ -120,4 +120,7 @@ function mouseClicked() {
     textSize(15);
     text('1', 250, 250);
   }
+  if (mouseX < 375 && mouseX > 125 && mouseY < 375 && mouseY > 125) {
+    background(255)
+  }
 }
