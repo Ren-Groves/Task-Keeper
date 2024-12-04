@@ -26,6 +26,15 @@ function draw() {
   rect(210, 5, 80, 30);
   rect(310, 5, 80, 30);
   rect(410, 5, 80, 30);
+
+  fill(0);
+  textSize(15);
+  stroke(255);
+  text('5- Most Important', 5, 50);
+  text('4- Highly Important', 5, 65);
+  text('3- Important', 5, 80);
+  text('2- Slightly Important', 5, 95);
+  text('1- Less Important', 5, 110);
 }
 
 function keyPressed() {
