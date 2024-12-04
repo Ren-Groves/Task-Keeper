@@ -32,7 +32,7 @@ function draw() {
   
   fill(0);
   textSize(15);
-  stroke(255);
+  strokeWeight(0);
   text('5- Most Important', 5, 50);
   text('4- Highly Important', 5, 65);
   text('3- Important', 5, 80);
@@ -61,6 +61,7 @@ function mouseClicked() {
     stroke(255);
     circle(250, 250, 250);
     fill(0);
+    strokeWeight(0);
     textSize(15);
     text('5', 245, 175);
   }
@@ -76,6 +77,7 @@ function mouseClicked() {
     stroke(255);
     circle(250, 250, 250);
     fill(0);
+    strokeWeight(0);
     textSize(15);
     text('4', 245, 175);
   }
@@ -91,6 +93,7 @@ function mouseClicked() {
     stroke(255);
     circle(250, 250, 250);
     fill(0);
+    strokeWeight(0);
     textSize(15);
     text('3', 245, 175);
   }
@@ -106,6 +109,7 @@ function mouseClicked() {
     stroke(255);
     circle(250, 250, 250);
     fill(0);
+    strokeWeight(0);
     textSize(15);
     text('2', 245, 175);
   }
@@ -121,6 +125,7 @@ function mouseClicked() {
     stroke(255);
     circle(250, 250, 250);
     fill(0);
+    strokeWeight(0);
     textSize(15);
     text('1', 245, 175);
   }
