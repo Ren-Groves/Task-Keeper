@@ -1,6 +1,9 @@
 function setup() {
   createCanvas(500, 500);
   background(255);
+
+  input = createInput('');
+  input.position(0, 475);
 }
 
 function draw() {
@@ -22,6 +25,13 @@ function draw() {
   rect(210, 5, 80, 30);
   rect(310, 5, 80, 30);
   rect(410, 5, 80, 30);
+}
+
+function keyPressed() {
+  if (keyCode === ENTER) {
+    let msg = str(input.value);
+    taskList.push(msg);
+  }
 }
 
 function mouseClicked() {
