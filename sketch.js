@@ -37,13 +37,6 @@ function draw() {
   text('1- Less Important', 5, 110);
 }
 
-function keyPressed() {
-  if (keyCode === ENTER) {
-    let msg = str(input.value);
-    taskList.push(msg);
-  }
-}
-
 function mouseClicked() {
   if (mouseX < 90 && mouseY < 35) {
     fillGradient('radial', {
@@ -58,7 +51,7 @@ function mouseClicked() {
     circle(250, 250, 250);
     fill(0);
     textSize(15);
-    text(taskList[1], 250, 250);
+    text('5', 250, 250);
   }
   if (mouseX < 190 && mouseX > 90 && mouseY < 35) {
     fillGradient('radial', {
