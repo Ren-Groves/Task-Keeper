@@ -1,5 +1,11 @@
 let input;
 
+let mySound;
+function preload() {
+  soundFormats('mp3', 'ogg');
+  mySound = loadSound('/assets/happy-pop-2-185287.mp3');
+}
+
 function setup() {
   createCanvas(500, 500);
   background(255);
@@ -131,5 +137,6 @@ function mouseClicked() {
   }
   if (mouseX < 375 && mouseX > 125 && mouseY < 375 && mouseY > 125) {
     background(255)
+    mySound.play();
   }
 }
