@@ -6,6 +6,8 @@ function setup() {
 
   input = createInput('');
   input.position(0, 475);
+
+  input.input(writeTask);
 }
 
 function draw() {
@@ -39,6 +41,14 @@ function draw() {
   text('1- Less Important', 5, 110);
 }
 
+function writeTask() {
+  let msg = input.value();
+  fill(0);
+  textSize(15);
+  stroke(255);
+  text(msg, 150, 250);
+}
+
 function mouseClicked() {
   if (mouseX < 90 && mouseY < 35) {
     fillGradient('radial', {
@@ -53,7 +63,7 @@ function mouseClicked() {
     circle(250, 250, 250);
     fill(0);
     textSize(15);
-    text('5', 250, 250);
+    text('5', 245, 175);
   }
   if (mouseX < 190 && mouseX > 90 && mouseY < 35) {
     fillGradient('radial', {
@@ -68,7 +78,7 @@ function mouseClicked() {
     circle(250, 250, 250);
     fill(0);
     textSize(15);
-    text('4', 250, 250);
+    text('4', 245, 175);
   }
   if (mouseX < 290 && mouseX > 190 && mouseY < 35) {
     fillGradient('radial', {
@@ -83,7 +93,7 @@ function mouseClicked() {
     circle(250, 250, 250);
     fill(0);
     textSize(15);
-    text('3', 250, 250);
+    text('3', 245, 175);
   }
   if (mouseX < 390 && mouseX > 290 && mouseY < 35) {
     fillGradient('radial', {
@@ -98,7 +108,7 @@ function mouseClicked() {
     circle(250, 250, 250);
     fill(0);
     textSize(15);
-    text('2', 250, 250);
+    text('2', 245, 175);
   }
   if (mouseX < 490 && mouseX > 390 && mouseY < 35) {
     fillGradient('radial', {
@@ -113,7 +123,7 @@ function mouseClicked() {
     circle(250, 250, 250);
     fill(0);
     textSize(15);
-    text('1', 250, 250);
+    text('1', 245, 175);
   }
   if (mouseX < 375 && mouseX > 125 && mouseY < 375 && mouseY > 125) {
     background(255)
